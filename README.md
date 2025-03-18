@@ -35,8 +35,8 @@ Click the **Fork** button at the top right of this repository to create your own
 
 ### 2️ Clone the Forked Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/kmeans-customer-segmentation.git
-cd kmeans-customer-segmentation
+git clone https://github.com/baranidharan27/Project-CS.git
+cd Project-CS
 ```
 
 ### 3️ Create a Virtual Environment & Install Dependencies
