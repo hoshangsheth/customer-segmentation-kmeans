@@ -69,7 +69,8 @@ Our analysis includes:
 
 ##  Contributors
 👥 This project is built collaboratively by:
-- **Your Name** - [GitHub](https://github.com/YOUR_USERNAME)
+- **Paranidhran** - [GitHub](https://github.com/baranidharan27)
+- **koushikGuduru** - [GitHub](https://github.com/koushikGuduru)
 - Other Team Members...
 
 ---
