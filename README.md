@@ -71,6 +71,9 @@ Our analysis includes:
 👥 This project is built collaboratively by:
 - **Paranidhran** - [GitHub](https://github.com/baranidharan27)
 - **koushikGuduru** - [GitHub](https://github.com/koushikGuduru)
+- **Hoshang**[GitHub](https://github.com/Hoshhh08)
+- **Sarayu**[GitHub](https://github.com/Sarayu1903)
+- **Gayatri**[GitHub](https://github.com/gayatri-robo)
 - Other Team Members...
 
 ---
