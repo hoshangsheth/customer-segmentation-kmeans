@@ -1,0 +1,97 @@
+Metadata-Version: 2.4
+Name: project-cs
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: jupyter>=1.1.1
+Requires-Dist: matplotlib>=3.10.1
+Requires-Dist: notebook>=7.3.3
+Requires-Dist: numpy>=2.2.4
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: plotly>=6.0.1
+Requires-Dist: scikit-learn>=1.6.1
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: streamlit>=1.44.1
+Requires-Dist: streamlit-option-menu>=0.4.0
+
+# K-Means Clustering for Customer Segmentation
+
+![K-Means Clustering](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/K-means_convergence.gif/250px-K-means_convergence.gif)
+
+##  Project Overview
+Customer segmentation  in marketing and business analytics. In this project, we apply **K-Means clustering** to segment customers based on their purchasing behavior and other relevant features. We also provide extensive **data visualizations** to interpret the clusters effectively.
+
+##  Repository Structure
+```
+kmeans-customer-segmentation/
+│── data/                   # Dataset storage (instructions in README)
+│── notebooks/              # Jupyter Notebooks 
+│── docs/                   # Documentation and guidelines
+│── results/                # Cluster outputs and visualizations
+│── requirements.txt        # Required dependencies
+│── README.md               # Project overview and guidelines
+│── CONTRIBUTING.md         # Collaboration guidelines
+│── .gitignore              # Ignore unnecessary files
+```
+
+## 📊 Dataset
+We use a dataset containing customer transaction records. It includes features like:
+- **Customer ID**
+- **Annual Income**
+- **Spending Score**
+- **Purchase Behavior**
+- **Other demographic data**
+
+### ** Dataset Location**
+ [Dataset Link](#) *(check inside `data/` folder)*
+
+## Installation & Setup
+### 1️ Fork the Repository
+Click the **Fork** button at the top right of this repository to create your own copy.
+
+### 2️ Clone the Forked Repository
+```bash
+git clone https://github.com/baranidharan27/Project-CS.git
+cd Project-CS
+```
+
+### 3️ Create a Virtual Environment & Install Dependencies
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+pip install -r requirements.txt
+```
+
+### 4️ Make Your Changes
+Modify the code, add features, or fix issues in your local repository.
+
+### 5️ Push Changes to Your Forked Repository
+```bash
+git add .
+git commit -m "Added visualization for clusters"
+git push origin main
+```
+
+### 6️⃣ Create a Pull Request
+- Navigate to the **original repository**.
+- Click on **Pull Requests** > **New Pull Request**.
+- Select your **forked repository & branch** and submit the PR.
+
+## 📊 Visualizations & Insights
+Our analysis includes:
+- **Cluster visualization using PCA & t-SNE**
+- **Heatmaps and pair plots for feature correlation**
+- **Elbow method & silhouette analysis for optimal K selection**
+
+##  Contributors
+👥 This project is built collaboratively by:
+- **Paranidhran** - [GitHub](https://github.com/baranidharan27)
+- **koushikGuduru** - [GitHub](https://github.com/koushikGuduru)
+- **Hoshang**[GitHub](https://github.com/Hoshhh08)
+- **Sarayu**[GitHub](https://github.com/Sarayu1903)
+- **Gayatri**[GitHub](https://github.com/gayatri-robo)
+- Other Team Members...
+
+---
+
