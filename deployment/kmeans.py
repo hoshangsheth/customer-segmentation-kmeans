@@ -9,13 +9,13 @@ from streamlit_option_menu import option_menu
 st.set_page_config(page_title="Customer Segmentation App", layout="wide")
 
 # Load model and preprocessing tools
-with open("notebooks/kmeans.pkl", "rb") as model_file:
+with open("deployment/kmeans.pkl", "rb") as model_file:
     kmeans = pickle.load(model_file)
-with open("notebooks/scaler.pkl", "rb") as scaler_file:
+with open("deployment/scaler.pkl", "rb") as scaler_file:
     scaler = pickle.load(scaler_file)
-with open("notebooks/pca.pkl", "rb") as pca_file:
+with open("deployment/pca.pkl", "rb") as pca_file:
     pca = pickle.load(pca_file)
-with open("notebooks/cluster_mapping.pkl", "rb") as mapping_file:
+with open("deployment/cluster_mapping.pkl", "rb") as mapping_file:
     cluster_mapping = pickle.load(mapping_file)
 
 # Custom CSS
