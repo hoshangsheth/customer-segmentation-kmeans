@@ -2,8 +2,8 @@
 
 ![K-Means Clustering](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/K-means_convergence.gif/250px-K-means_convergence.gif)
 
-##  Project Overview
-Customer segmentation  in marketing and business analytics. In this project, we apply **K-Means clustering** to segment customers based on their purchasing behavior and other relevant features. We also provide extensive **data visualizations** to interpret the clusters effectively.
+## 📌 Project Overview
+This project uses K-Means clustering to segment customers based on features like annual income and spending behavior. It helps businesses identify distinct customer groups for targeted marketing strategies. We performed EDA, applied clustering techniques, and visualized the results using PCA for better interpretability.
 
 ##  Repository Structure
 ```
@@ -63,9 +63,16 @@ git push origin main
 
 ## 📊 Visualizations & Insights
 Our analysis includes:
-- **Cluster visualization using PCA & t-SNE**
-- **Heatmaps and pair plots for feature correlation**
-- **Elbow method & silhouette analysis for optimal K selection**
+- **📌 Elbow Method & Silhouette Score for optimal K selection**
+- **🔍 PCA for cluster visualization**
+- **📊 Heatmaps, pair plots, and other visual tools for EDA**
+- **📑 Interpretations of clusters for business understanding**
+
+## 🛠 Tech Stack / Tools
+- **Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)**
+- **Jupyter Notebooks/VS Code**
+- **Unsupervised Machine Learning**
+- **PCA for dimensionality reduction**
 
 ##  Contributors
 👥 This project is built collaboratively by:
