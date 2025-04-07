@@ -4,3 +4,5 @@ pandas
 plotly
 streamlit-option-menu
 scikit-learn
+gspread
+oauth2client
