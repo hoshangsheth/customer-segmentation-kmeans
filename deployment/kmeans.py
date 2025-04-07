@@ -193,16 +193,43 @@ elif selected == "Meet the Team":
 
 elif selected == "Contact Us":
     st.title("Contact Us 📬")
-    team_emails = {"Hoshang": "hoshang@example.com", "Paranidhran": "paranidhran@example.com", 
-                   "Koushik Guduru": "koushik@example.com", "Sarayu": "sarayu@example.com", 
-                   "Gayatri": "gayatri@example.com"}
-    selected_member = st.selectbox("Select Team Member", list(team_emails.keys()))
-    email = team_emails[selected_member]
-    name = st.text_input("Your Name")
-    user_email = st.text_input("Your Email")
-    message = st.text_area("Your Message")
-    if st.button("📨 Send Message"):
-        if name and user_email and message:
-            st.success(f"✅ Message sent to {selected_member} at {email}!")
-        else:
-            st.error("⚠️ Please fill out all fields before sending.")
+    
+    st.write('Have a feedback, questions, or just want to say hi? Drop your message below and it will reach me!')
+
+    # Google Sheets Integration:
+    import gspread
+    from oauth2client.service_account import ServiceAccountCredentials
+    from datetime import datetime
+
+    def save_to_gsheet(name, email, message):
+        scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+        creds_dict = st.secrets['gcp_service_account']     # Loaded from streamlit secrets
+        creds = ServiceAccountCredentials.from_json_keyfile_dict(dict(creds_dict), scope)
+        client = gspread.authorize(creds)
+
+        # Open sheet using the Sheet ID:
+        sheet = client.open_by_key("1Jwyum5tV-rphQd5-YG4heh-1cnYx766oNuKC9-RRpkM").worksheet("Sheet1")
+        sheet.append_row([
+            datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            name,
+            email,
+            message
+        ])
+
+    # Contact form:
+    with st.form("Contact Form"):
+        name = st.text_input("Your Name")
+        user_email = st.text_input("Your Email")
+        message = st.text_area("Your Message")
+        submitted = st.form_submit_button("📨 Send Message")
+
+        if submitted:
+            if name and user_email and message:
+                try:
+                    save_to_gsheet(name, user_email, message)
+                    st.success("✅ Message sent successfully! I'll get back to you soon.")
+                except Exception as e:
+                    st.error("❌ Oops! Something went wrong.")
+                    st.exception(e)
+            else:
+                st.warning("⚠️ Please fill in all fields before submitting.")
