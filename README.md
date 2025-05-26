@@ -2,21 +2,12 @@
 
 ![K-Means Clustering](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/K-means_convergence.gif/250px-K-means_convergence.gif)
 
+## 🚀 Live Demo
+Check out the interactive customer segmentation app deployed on Streamlit here:  
+[https://customers-profiling.streamlit.app/](https://customers-profiling.streamlit.app/)
+
 ## 📌 Project Overview
 This project uses K-Means clustering to segment customers based on features like annual income and spending behavior. It helps businesses identify distinct customer groups for targeted marketing strategies. We performed EDA, applied clustering techniques, and visualized the results using PCA for better interpretability.
-
-##  Repository Structure
-```
-kmeans-customer-segmentation/
-│── data/                   # Dataset storage (instructions in README)
-│── notebooks/              # Jupyter Notebooks 
-│── docs/                   # Documentation and guidelines
-│── results/                # Cluster outputs and visualizations
-│── requirements.txt        # Required dependencies
-│── README.md               # Project overview and guidelines
-│── CONTRIBUTING.md         # Collaboration guidelines
-│── .gitignore              # Ignore unnecessary files
-```
 
 ## 📊 Dataset
 We use a dataset containing customer transaction records. It includes features like:
@@ -78,7 +69,7 @@ Our analysis includes:
 👥 This project is built collaboratively by:
 - **Paranidhran** - [GitHub](https://github.com/baranidharan27)
 - **koushikGuduru** - [GitHub](https://github.com/koushikGuduru)
-- **Hoshang**[GitHub](https://github.com/Hoshhh08)
+- **Hoshang**[GitHub](https://github.com/hoshangsheth)
 - **Sarayu**[GitHub](https://github.com/Sarayu1903)
 - **Gayatri**[GitHub](https://github.com/gayatri-robo)
 - Other Team Members...
